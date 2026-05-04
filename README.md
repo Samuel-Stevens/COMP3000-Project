@@ -5,7 +5,7 @@ This project covered the development of a Machine Learning powered Network Intru
 
 This repository contains the three Jupyter Notebook files that were developed over the course of this project, the dissertation that was written over the course of the project detailing the research into AI IDS systems, the planning of the system, and the implementation of it. It also contains the three code files that were developed over the course of the project, the first of these being ModelAccuracyTest which covers the accuracy testing of 5 machine learning algorithms, these algorithms are RandomForest, XGBoost, Logistic Regression, LinearSVM, and KNN. The Random Forest model achieved the highest results with an accuracy of 0.9099.
 
-The second code file takings the preprocessing and training of the Random Forest model and then dumps the feature columns and model data to two files allowing for reuse of the model without the need for retraining. The third file contains code to load the trained model, and run predictions againsts the UNSW NB-15 testing dataset, outputting the results to a TXT file, and if suspicious activity is detected, it will send out an email alert to pre-decided email address.
+RandomForestTraining takes the preprocessing and training of the Random Forest model and then dumps the feature columns and model data to two files allowing for reuse of the model without the need for retraining. ExtractionAndOutput contains code to load the trained model, and run predictions againsts the UNSW NB-15 testing dataset, outputting the results to a TXT file, and if suspicious activity is detected, it will send out an email alert to pre-decided email address.
 
 This repo also contains the Random Forest model and feature column files that were created by the second code file. All code files require the UNSW NB-15 Testing and Training datasets to work these can be downloaded from the link below.
 
@@ -28,3 +28,19 @@ This project made use of several python libaries that made development possible 
 These libraries are critical to the function of this project, and if are not installed, the code will not work.
 
 If you are attempting to use this code on a different device, the file paths MUST be changed to suit the new device as these paths are tailored to the device development took place on.
+
+Dataset references
+
+Sarhan, M. et al. (2021) ‘NetFlow Datasets for Machine Learning-based Network Intrusion Detection Systems’, arXiv:2011.09144 [cs], 371, pp. 117–135. Available at: https://doi.org/10.1007/978-3-030-72802-1_9.
+
+Moustafa, N., Creech, G. and Slay, J. (2017) ‘Big Data Analytics for Intrusion Detection System: Statistical Decision-Making Using Finite Dirichlet Mixture Models’, Data Analytics and Decision Support for Cybersecurity, pp. 127–156. Available at: https://doi.org/10.1007/978-3-319-59439-2_5.
+
+‌Moustafa, N., Slay, J. and Creech, G. (2017) ‘Novel Geometric Area Analysis Technique for Anomaly Detection using Trapezoidal Area Estimation on Large-Scale Networks’, IEEE Transactions on Big Data, pp. 1–1. Available at: https://doi.org/10.1109/tbdata.2017.2715166.
+
+‌Moustafa, N. and Slay, J. (2016) ‘The evaluation of Network Anomaly Detection Systems: Statistical analysis of the UNSW-NB15 data set and the comparison with the KDD99 data set’, Information Security Journal: A Global Perspective, 25(1-3), pp. 18–31. Available at: https://doi.org/10.1080/19393555.2015.1125974.
+
+‌Moustafa, N. and Slay, J. (2015) UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set), IEEE Xplore. Available at: https://doi.org/10.1109/MilCIS.2015.7348942.
+
+‌
+
+‌
